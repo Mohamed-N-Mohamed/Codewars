@@ -62,4 +62,35 @@ function wordsToSentence(words) {
 
 console.log(wordsToSentence(["hello", "world"]))
 
+//Find the number with the most digits.
 
+//If two numbers in the argument array have the same number of digits, return the first one in the array.
+
+function findLongest(array){
+  return array.reduce((a, b) => (`${b}`.length > `${a}`.length ? b : a))
+}
+
+console.log(findLongest([1, 10, 100]))
+
+
+/*Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+
+Example:
+
+Input:
+
+'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+Output:
+
+'alpha beta gamma delta'*/
+
+function removeDuplicateWords (s) {
+  // your perfect code...
+  let words = s.split(' ');
+  let uniq = [...new Set(words)].join(' ')
+ return uniq
+ 
+  
+}
+removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta')
