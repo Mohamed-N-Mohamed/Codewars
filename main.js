@@ -93,4 +93,113 @@ function removeDuplicateWords (s) {
  
   
 }
-removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta')
+removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta');
+
+
+
+function solution(str){
+  return str.split("").reverse().join('')
+  
+}
+
+console.log(solution('hello'))
+
+
+
+
+function repeatStr (n, s) {
+  let str = ''
+  for(let i = 0; i < n; i++){
+    str += s
+
+  }
+  return str
+ 
+}
+
+
+console.log(repeatStr(3, '*'))
+
+
+
+function correct(string)
+{
+  return correct = string.replace(/0/g, '0').replace(/1/g, 'I')
+
+}
+
+console.log(correct('L0ND0N'))
+
+
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString();
+}
+
+console.log(numberToString(67, '67'))
+
+
+function domainName(url)
+{
+let answer = url.replace('http://','').replace('https://','').replace('www.','');
+let answer2 = answer.split('.')[0]
+
+console.log(answer2)
+}
+
+
+
+
+
+domainName("www.xakep.ru")
+
+function count (string) {  
+  // The function code should be here
+  let ob = {};
+
+  let answer = string.split('');
+  answer.forEach((char) => {
+    if(ob[char]){
+      ob[char] = ob[char] + 1
+    } else {
+      ob[char] = 1
+    }
+    
+
+  })
+console.log(ob);
+}
+
+
+function highestRank(arr){
+  //Your Code logic should written here
+  let highest = 0;
+  let ob = {}
+
+  let answer = arr.forEach((el) => {
+    
+  })
+  }
+
+
+
+count('aba')
+
+
+highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12]);
+
+
+let data = [
+  {name: 'Joe', age: 20},
+  {name: 'Bill', age: 30},
+  {name: 'Kate', age: 23}
+]
+
+
+function getNames(data){
+ return data.map((item) => {return item.name})
+ 
+  
+}
+
+console.log(getNames(data))
